@@ -1853,7 +1853,6 @@ export const toolContentJa: Record<string, ToolContent> = {
       { question: '書式は保持されますか？', answer: 'はい！ツールはネイティブFB2レンダリングを使用し、高忠実度でテキスト書式、画像、章構造を保持します。' },
     ],
   },
-
   'pdf-to-excel': {
     title: 'PDFをExcelに変換',
     metaDescription: 'PDFの表を編集可能なExcel（XLSX）に変換。',
@@ -2136,7 +2135,6 @@ export const toolContentJa: Record<string, ToolContent> = {
       { question: 'PDF/Aから戻すことができますか？', answer: 'PDF/Aファイルは標準のPDFであり、通常どおり開くことができます。アーカイブ機能は制限を追加しますが、制約ではありません。' },
     ],
   },
-
   'extract-tables': {
     title: 'PDFから表を抽出',
     metaDescription: 'PDF文書から表を検出して抽出。JSON、Markdown、またはCSV形式にエクスポート。',

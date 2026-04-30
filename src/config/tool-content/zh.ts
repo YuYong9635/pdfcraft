@@ -2081,8 +2081,6 @@ export const toolContentZh: Record<string, ToolContent> = {
       { question: '正则表达式搜索如何工作？', answer: '启用"使用正则表达式"以使用正则模式搜索。例如，\\d{4}-\\d{4}-\\d{4}-\\d{4}可查找信用卡号。' },
     ],
   },
-
-
   'decrypt-pdf': {
     title: '解密PDF',
     metaDescription: '从PDF文件中删除密码。解锁受密码保护的文档。',
@@ -2290,7 +2288,6 @@ export const toolContentZh: Record<string, ToolContent> = {
       { question: '处理需要多长时间？', answer: '处理时间取决于文件大小和DPI。150 DPI（默认值）在速度和准确性之间提供了良好的平衡。更高的DPI更准确但更慢。' },
     ],
   },
-
   'pdf-to-pdfa': {
     title: 'PDF转PDF/A',
     metaDescription: '将普通PDF转换为适合长期存档的PDF/A格式。符合ISO标准。',
@@ -2465,7 +2462,6 @@ export const toolContentZh: Record<string, ToolContent> = {
       { question: '为什么签名可能无效？', answer: '如果文档被修改、证书过期或证书不受信任，签名可能无效。' },
     ],
   },
-
   'email-to-pdf': {
     title: '邮件转PDF',
     metaDescription: '将邮件文件（.eml、.msg）转换为PDF文档。保留格式、内联图像、可点击链接和嵌入附件。',
@@ -2652,7 +2648,6 @@ export const toolContentZh: Record<string, ToolContent> = {
       { question: '扫描的PDF能用吗？', answer: '扫描的PDF包含图像而非文本。请先使用我们的OCR工具提取文本，然后再转换为Markdown。' },
     ],
   },
-
   'extract-tables': {
     title: '从PDF提取表格',
     metaDescription: '检测并从PDF文档中提取表格。导出为JSON、Markdown或CSV格式。',

@@ -1483,7 +1483,6 @@ export const toolContentDe: Record<string, ToolContent> = {
       { question: 'Bleibt die Formatierung erhalten?', answer: 'Ja! Das Tool verwendet natives FB2-Rendering und bewahrt Textformatierung, Bilder und Kapitelstruktur mit hoher Wiedergabetreue.' },
     ],
   },
-
   'cbz-to-pdf': {
     title: 'CBZ zu PDF',
     metaDescription: 'Konvertieren Sie Comic-Archive (CBZ) in PDF. Bewahren Sie Bildreihenfolge und Qualität für digitale Comics.',

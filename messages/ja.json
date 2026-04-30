@@ -970,7 +970,8 @@
       "marginBottom": "Margin Bottom",
       "marginLeft": "Margin Left",
       "marginRight": "Margin Right",
-      "optionsTitle": "Crop Options"
+      "optionsTitle": "Crop Options",
+      "page": "ページ"
     },
     "organizePdf": {
       "uploadLabel": "PDFファイルをアップロード",
@@ -1677,6 +1678,10 @@
       "failed": "Failed to add watermark.",
       "addButton": "Add Watermark",
       "successMessage": "Watermark added successfully!",
+      "repeatTitle": "透かし繰り返し",
+      "repeatEnable": "ページ全体に透かしをタイル配置",
+      "repeatSpacingX": "水平間隔",
+      "repeatSpacingY": "垂直間隔",
       "type": "タイプ",
       "position": "位置",
       "posCenter": "中央",
@@ -2014,7 +2019,7 @@
     },
     "rasterizePdf": {
       "uploadLabel": "PDFファイルをアップロード",
-      "uploadDescription": "PDFファイルをドラッグ＆ドロップして画像に変換します。",
+      "uploadDescription": "PDFファイルをドラッグ＆ドロップして画像または新しいPDFにラスタライズします。",
       "optionsTitle": "出力オプション",
       "dpiLabel": "解像度 (DPI)",
       "formatLabel": "出力形式",
@@ -2022,8 +2027,8 @@
       "pageRangeLabel": "ページ範囲 (任意)",
       "pageRangeDesc": "すべてのページを変換する場合は空のままにしてください。",
       "bgColorLabel": "背景色",
-      "convertButton": "画像に変換",
-      "successMessage": "画像が正常に作成されました！ダウンロードをクリックして保存してください。"
+      "convertButton": "ラスタライズ",
+      "successMessage": "ラスタライズ完了！ダウンロードをクリックしてファイルを保存してください。"
     },
     "markdownToPdf": {
       "uploadLabel": "Markdownファイルをアップロード",

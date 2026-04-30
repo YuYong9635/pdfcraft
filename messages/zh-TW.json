@@ -1038,7 +1038,8 @@
       "marginBottom": "下边距",
       "marginLeft": "左边距",
       "marginRight": "右边距",
-      "optionsTitle": "裁剪选项"
+      "optionsTitle": "裁剪选项",
+      "page": "頁"
     },
     "organizePdf": {
       "uploadLabel": "上傳PDF檔案",
@@ -1399,6 +1400,10 @@
       "failed": "新增水印失敗。",
       "addButton": "新增水印",
       "successMessage": "水印新增成功！",
+      "repeatTitle": "重複水印",
+      "repeatEnable": "在整頁平鋪水印",
+      "repeatSpacingX": "水平間距",
+      "repeatSpacingY": "垂直間距",
       "type": "類型",
       "position": "位置",
       "posCenter": "居中",
