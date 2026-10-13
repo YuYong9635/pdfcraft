@@ -244,6 +244,8 @@ export function generateWebPageSchema(
     it: 'it-IT',
     id: 'id-ID',
     vi: 'vi-VN',
+    ro: 'ro-RO',
+    pl: 'pl-PL',
   };
 
   return {

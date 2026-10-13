@@ -10,11 +10,13 @@ export { toolContentEs } from './es';
 export { toolContentFr } from './fr';
 export { toolContentDe } from './de';
 export { toolContentZh } from './zh';
+export { toolContentZhTW } from './zh-TW';
 export { toolContentPt } from './pt';
 export { toolContentAr } from './ar';
 export { toolContentIt } from './it';
 export { toolContentId } from './id';
 export { toolContentVn } from './vi';
+export { toolContentPl } from './pl';
 
 import { toolContentEn } from './en';
 import { toolContentJa } from './ja';
@@ -23,14 +25,18 @@ import { toolContentEs } from './es';
 import { toolContentFr } from './fr';
 import { toolContentDe } from './de';
 import { toolContentZh } from './zh';
+import { toolContentZhTW } from './zh-TW';
 import { toolContentPt } from './pt';
 import { toolContentAr } from './ar';
 import { toolContentIt } from './it';
 import { toolContentId } from './id';
 import { toolContentVn } from './vi';
+import { toolContentPl } from './pl';
 import { ToolContent } from '@/types/tool';
+import type { Locale } from '@/lib/i18n/config';
 
-export type Locale = 'en' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'zh' | 'zh-TW' | 'pt' | 'ar' | 'it' | 'id' | 'vi';
+export type { Locale } from '@/lib/i18n/config';
+
 
 /**
  * Get tool content for a specific locale
@@ -39,7 +45,7 @@ export type Locale = 'en' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'zh' | 'zh-TW' | 
  * ar falls back to en content for now
  */
 export function getToolContent(locale: Locale, toolId: string): ToolContent | undefined {
-  const contentMap: Record<string, Record<string, ToolContent>> = {
+  const contentMap: Record<Locale, Record<string, ToolContent>> = {
     en: toolContentEn,
     ja: toolContentJa,
     ko: toolContentKo,
@@ -47,18 +53,17 @@ export function getToolContent(locale: Locale, toolId: string): ToolContent | un
     fr: toolContentFr,
     de: toolContentDe,
     zh: toolContentZh,
+    'zh-TW': toolContentZhTW,
     pt: toolContentPt,
     ar: toolContentAr,
     it: toolContentIt,
     id: toolContentId,
     vi: toolContentVn,
+    ro: toolContentEn, // Fallback to English for Romanian tool content for now
+    pl: toolContentPl,
   };
 
-  // Map zh-TW to zh (use Simplified Chinese content for Traditional Chinese)
-  const effectiveLocale: Exclude<Locale, 'zh-TW'> =
-    locale === 'zh-TW' ? 'zh' : locale;
-
-  const localeContent = contentMap[effectiveLocale];
+  const localeContent = contentMap[locale];
   if (localeContent && localeContent[toolId]) {
     return localeContent[toolId];
   }

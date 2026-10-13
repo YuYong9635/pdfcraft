@@ -64,6 +64,18 @@ function walkDir(dir, callback) {
 }
 
 async function main() {
+    const isDesktopOrDocker =
+        process.env.DOCKER_BUILD === 'true' ||
+        process.env.TAURI_ENV === 'true' ||
+        process.env.BUILDING_TAURI === 'true' ||
+        process.env.SKIP_CHUNKING === 'true' ||
+        Boolean(process.env.TAURI_ENV_PLATFORM || process.env.TAURI_PLATFORM);
+
+    if (isDesktopOrDocker) {
+        console.log('[chunking] Desktop/Tauri or Docker environment detected, skipping chunking.');
+        return;
+    }
+
     if (!existsSync(OUT_DIR)) {
         console.log('[chunking] Output directory (out/) not found, skipping.');
         return;
